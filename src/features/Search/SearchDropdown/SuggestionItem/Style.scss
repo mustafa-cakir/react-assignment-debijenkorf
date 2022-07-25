@@ -1,0 +1,21 @@
+@import "src/assets/styles/mixins";
+
+.suggestion-item {
+    display: block;
+    //margin: 0 -15px;
+    color: rgba($color-dark, .6);
+    padding: 15px;
+    //border-bottom: 1px solid rgba($color-dark, .2);
+    transition: background-color .2s linear;
+    &:hover {
+        background-color: rgba($color-dark, .05);
+    }
+    &:last-of-type {
+        margin-bottom: 0;
+        border-bottom: none;
+    }
+    .highlight {
+        color: $color-dark;
+        font-weight: bolder;
+    }
+}

@@ -1,0 +1,9 @@
+@import "src/assets/styles/mixins";
+
+.search-input-container {
+    position: relative;
+    @include media-breakpoint-up(md) {
+        max-width: 50%;
+        margin: 0 auto;
+    }
+}

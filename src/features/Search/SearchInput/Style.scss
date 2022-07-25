@@ -1,0 +1,43 @@
+@import 'src/assets/styles/mixins';
+
+.search-input {
+    position: relative;
+    .search-btn,
+    .clear-btn {
+        color: rgba($color-dark, .7);
+        height: 50px;
+        width: 45px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        right: 5px;
+        top:0;
+        position: absolute;
+        font-size: 20px;
+        transition: color .2s linear;
+        &:hover {
+            color: $color-dark;
+        }
+    }
+    .clear-btn {
+        right: 45px;
+    }
+    input {
+        background-color: #fff;
+        border-radius: 5px;
+        height: 50px;
+        padding: 0 100px 0 15px;
+        text-align: left;
+        transition: border-color 0.2s linear, box-shadow 0.2s linear;
+        width: 100%;
+        border: 1px solid rgba($color-dark, .5);
+        &:hover {
+            border-color: rgba($color-dark, .7);
+        }
+        &:focus {
+            border-color: $color-dark;
+            box-shadow: 0 0 0 2px rgba(0, 0, 0, 0.2);
+            outline: none;
+        }
+    }
+}

@@ -1,0 +1,28 @@
+/**
+	Custom UI-Kit
+ */
+
+@import './mixins';
+
+.container {
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 15px;
+    padding-right: 15px;
+    position: relative;
+    width: 100%;
+}
+
+@each $breakpoint, $container-max-width in $container-max-widths {
+    @include media-breakpoint-up($breakpoint) {
+        .container {
+            $infix: breakpoint-infix($breakpoint, $grid-breakpoints);
+            max-width: $container-max-width;
+        }
+    }
+}
+
+
+.ui {
+    //
+}

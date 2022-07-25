@@ -1,0 +1,14 @@
+@import '../../../assets/styles/mixins';
+
+.shimmer {
+    &-item {
+        animation: shimmer linear 3s infinite;
+        background-image: linear-gradient(
+            to right,
+            rgba($color-dark, 0.1) 4%,
+            rgba($color-dark, 0.2) 25%,
+            rgba($color-dark, 0.1) 36%
+        );
+        background-size: 1000px 100%;
+    }
+}
